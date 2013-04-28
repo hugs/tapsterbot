@@ -1,0 +1,13 @@
+{
+  "name": "bitbeambot",
+  "description": "Play video games on an iPad with a Bitbeam + Arduino powered robot.",
+  "version": "0.0.1",
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "dependencies": {
+    "johnny-five": "git://github.com/voodootikigod/johnny-five.git"
+  },
+  "keywords": []
+}

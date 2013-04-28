@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <title>Canvas Demo</title>
+    <script src="../js/ik.js"></script>
+</head>
+
+<body>
+    <canvas id="theCanvas" width="400" height="400">
+      Your web browser does not support canvas!
+    </canvas>
+    <script>
+        circle = function(x, y, r){
+            var canvas = document.getElementById('theCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.beginPath();
+            ctx.arc(x, y, r, 0, Math.PI*2, true);
+            ctx.strokeStyle = "#000";
+            ctx.stroke();
+        }
+        circle(200,200, 11*8);
+
+        dot = function(x, y){
+            var canvas = document.getElementById('theCanvas');
+            var ctx = canvas.getContext('2d');
+            ctx.beginPath();
+            ctx.arc(x, y, 1, 0, Math.PI*2, true);
+            ctx.fillStyle = "#000000";
+            ctx.fill();
+        }
+
+        for (var a=40; a<=95; a+=4){
+            for (var b=40; b<=95; b+=4){
+                for (var c=40; c<=95; c+=4){
+                    points = ik.forward(a,b,c);
+                    if ( (points[3] < -150) && (points[3] > -180)) {
+                        dot(points[1]+200, points[2]+200);
+                    }
+                }
+            }
+        }
+        
+        phone = function() {
+            var canvas = document.getElementById('theCanvas');
+            var ctx = canvas.getContext('2d');
+            var width = 68.7;
+            var height = 133.9;
+            ctx.beginPath();
+            ctx.moveTo(200-width/2,200-height/2);
+            ctx.lineTo(200+width/2,200-height/2);
+            ctx.lineTo(200+width/2,200+height/2);
+            ctx.lineTo(200-width/2,200+height/2);
+            ctx.lineTo(200-width/2,200-height/2);            
+            ctx.stroke();
+        }
+        phone();        
+
+    </script>
+
+</body>
+</html>
