@@ -1,4 +1,4 @@
-Tapsterbot - Your new mobile app testing robot, that also knows how to dance. 
+Tapsterbot - Your new mobile app testing robot, that also knows how to [dance](http://youtu.be/lbjilf5cz88). 
 ============================================================
 
 <span>
