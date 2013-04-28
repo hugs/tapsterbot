@@ -10,6 +10,7 @@
 
 ##Dependencies
 - Node/npm
+- One Tapster robot
 
 ##Getting Started
 
