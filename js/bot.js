@@ -1,7 +1,3 @@
-// Copyright 2012
-// Chris Williams, Jason Huggins
-// MIT License
-
 five = require("johnny-five");
 ik = require("./ik");
 board = new five.Board({ debug: false});
