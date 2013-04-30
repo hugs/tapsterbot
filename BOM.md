@@ -1,4 +1,4 @@
-## Tapsterbot Parts:
+## Tapsterbot Bill of Materials:
 
 ### Bitbeam / SecretMathLab
     3D Print:
