@@ -3,44 +3,46 @@
 ### Bitbeam / SecretMathLab
     3D Print:
     Qty     Description
-    3       Servo mount
-    1       Stylus holder
+    12      2x1 beam
     8       3x1 beam
     6       5x1 beam
-    2       11x1 plate
-    6       17x1 plate
     8       9x1 beam
-    12      2x1 beam
+    2       11x1 plate
+    6       17x1 plate    
+    3       Servo mount
+    1       Stylus holder
 
     3D Print or Mill:
     Qty     Description
-    1       Arduino plate
-    1       Top plate
-    1       Base plate
     3       5x29 side plate
+    1       Arduino plate
+    1       Base plate    
+    1       Top plate
 
 
 ### McMaster-Carr
     Socket Bolts:
     Qty     Description
+    4       4-40 1/2 in
+    6       6-32 3/4 in
     12      10-32 3/4 in
     44      10-32 1 in
     6       10-32 1 1/4 in
-    6       6-32 3/4 in
-    4       4-40 1/2 in
 
     Hex Nuts:
     Qty     Description
-    40      10-32 low-profile
+    4       4-40 nuts
+    6       6-32 nuts
+    40      10-32 low-profile nuts
     18      10-32 lock nuts
     4       10-32 wing nuts
-    6       6-32 nuts
+
 
 ### Jameco
     Qty     Description
-    2       Wires (2 full bags)
-    1       Arduino
-    1       Arduino shield
+    2       Wires (10 wires per bag)
+    1       Arduino Uno
+    1       Arduino prototyping shield
     1       Breadboard
     1       USB cable
     1       Alligator clip
