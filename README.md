@@ -26,7 +26,7 @@
 
 1. Put your phone into the bot
 2. (from inside the `js/` dir) start the repl: `node bot.js`
-3. Load up the clibration page on your phone: `http://<your machine's ip>:8011`
+3. Load up the calibration page on your phone: `http://<your machine's ip>:8011`
 3. `calibrate()` the bot to the phone
 4. Load up the control page on your computer: `http://localhost:8011/control`
 5. Make clicking actions with your computer, see them happen to your phone!
