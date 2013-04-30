@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html;">
+  <title>Tapbot</title>
+  <meta name="robots" content="index,follow">
+  <meta name="viewport" content="initial-scale=1.0 maximum-scale=1.0 user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io.connect();
+    socket.on('news', function (data) {
+      console.log(data);
+      socket.emit('device info', { "foo": "bar", "height": window.innerHeight, "width": window.innerWidth, orientation: window.orientation });
+    });
+
+    socket.on('reload', function (data) {
+      // alert("RELOAD");
+      window.location = window.location;
+    });
+  </script>
+  <style>
+    body { margin: 0; padding: 0; height: 100%; }
+    canvas { background: #ccc }
+  </style>
+</head>
+<body>
+  <canvas id="canvas">
+  </canvas>
+  <script>
+    // document.ontouchmove = function(e){ 
+    //   e.preventDefault(); 
+    //   // return false;
+    // }
+
+    var canvas = document.getElementById("canvas");
+    if (window.orientation == 0 || window.orientation == 180) {
+      canvas.height = window.screen.height;
+      canvas.width = window.screen.width;      
+    } else {
+      canvas.height = window.screen.width;
+      canvas.width = window.screen.height;
+    }
+    window.scrollTo(0,1);
+
+    // canvas.addEventListener("mousedown", function (event) {
+    //   getTapLocation(event.)
+    // });
+
+    // document.onmousedown = function (e) {
+    //   alert(e.screenX + " - " + e.screenY);
+    // }
+    // document.onmouseover = function (e) {
+    //   alert(e.screenX + " - " + e.screenY);
+    // }
+
+    canvas.addEventListener("touchstart", function (event) {
+      var statusBarHeight = 20;
+
+      // event = touches
+      event = event.touches[0];
+      x = event.pageX;
+      y = event.pageY + statusBarHeight;
+
+      socket.emit('tap', { x: x, y: y });
+      // alert("Pos x:" + pos[0] + ", y:" + pos[1]);
+      //alert("Pos x:" + x + ", y:" + y);
+    }, false);
+  </script>
+</body>
+</html>

@@ -7,7 +7,9 @@
     "npm": "1.1.x"
   },
   "dependencies": {
-    "johnny-five": "git://github.com/voodootikigod/johnny-five.git"
+    "johnny-five": "git://github.com/voodootikigod/johnny-five.git",
+    "socket.io": "0.9.11",
+    "sylvester": "0.0.21"
   },
   "keywords": []
 }
