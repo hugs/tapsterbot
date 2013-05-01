@@ -1,0 +1,45 @@
+{
+   "name":"bitbeambot",
+   "description":"Play video games on an iPad with a Bitbeam + Arduino powered robot.",
+   "version":"0.0.1",
+   "homepage":"",
+   "author":[
+      {
+         "name":"Jason Huggins",
+         "email":"jrhuggins@gmail.com"
+      },
+      {
+         "name":"Chris Williams",
+         "email":""
+      },
+      {
+         "name":"Erik Kastner",
+         "email":"kastner@gmail.com"
+      },
+      {
+         "name":"Jason Fox",
+         "email":"jasonrobertfox@gmail.com"
+      }
+   ],
+   "repository":{
+      "type":"git",
+      "url":"git://github.com/hugs/tapsterbot.git"
+   },
+   "engines":{
+      "node":"0.8.x",
+      "npm":"1.1.x"
+   },
+   "dependencies":{
+      "johnny-five":"git://github.com/voodootikigod/johnny-five.git",
+      "socket.io":"0.9.11",
+      "sylvester":"0.0.21"
+   },
+   "devDependencies":{
+      "grunt-contrib-jasmine":"~0.4.0",
+      "grunt":"~0.4.0",
+      "grunt-contrib-jshint":"~0.2.0"
+   },
+   "keywords":[
+
+   ]
+}
