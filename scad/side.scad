@@ -23,12 +23,12 @@ module beam(number_of_holes) {
 	difference(){
 		cube([29*beam_width,5*beam_width,beam_width/2]);
 		
-		translate([8*2,0,0])
+		translate([8*2,8,0])
 		rotate(90)
-		beam(5);
+		beam(3);
 		
-		translate([8*28,0,0])
+		translate([8*28,8,0])
 		rotate(90)
-		beam(5);
+		beam(3);
 	}
 //}

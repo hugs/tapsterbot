@@ -1,4 +1,7 @@
-beam_width = 8;
+beam_width    = 8;
+hole_diameter = 5.1;
+hole_radius   = hole_diameter / 2;
+
 
 module beam(number_of_holes, step=8) {
     beam_length = number_of_holes * 8;
@@ -9,19 +12,30 @@ module beam(number_of_holes, step=8) {
         }
 }
 
-module side_connectors() {
-	rotate(a=0)
-    translate([-16,-beam_width*10,-2])
-	beam(5);
-	
-	rotate(a=120)
-     translate([-16,-beam_width*10,-2])
-	beam(5);
-	
-	rotate(a=240)
-     translate([-16,-beam_width*10,-2])
-	beam(5);
+
+module side_beam(number_of_holes) {
+    beam_length = number_of_holes * 8;
+    for (x=[beam_width/2 : beam_width*4 : beam_length]) {
+        translate([x-4,0,2])
+        cylinder(r=hole_radius, h=12, $fn=30);
+    }
 }
+
+module side_connectors() {
+    rotate(a=0)
+    translate([-16,-beam_width*10,-2])
+    side_beam(5);
+	
+    rotate(a=120)
+    translate([-16,-beam_width*10,-2])
+    side_beam(5);
+	
+    rotate(a=240)
+    translate([-16,-beam_width*10,-2])
+    side_beam(5);
+}
+
+
 
 // Uncomment 'projection' to create 2D (DXF-able) version
 //projection(cut=true) {
@@ -43,13 +57,6 @@ module side_connectors() {
         rotate(0)
 	    translate([0,-8*6,0])
         box();
-
-
-//translate([0,-32,-5])
-//rotate(90)
-//beam(9);
-
-
     }
 //}
 
@@ -73,15 +80,15 @@ module box() {
 module center_connectors() {
     translate([8,16,0])
     rotate(a=0)
-    beam(10,step=8*2);
+    beam(10,step=8*8);
 	
 
     rotate(a=120)
     translate([8,16,0])
-    beam(10,step=8*2);
+    beam(10,step=8*8);
 	
 
     rotate(a=240)
     translate([8,16,0])
-    beam(10,step=8*2);
+    beam(10,step=8*8);
 }
