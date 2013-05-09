@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head lang="en">
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html;">
+  <title>Tapbot Control!</title>
+  <meta name="robots" content="index,follow">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    var socket = io.connect();
+    socket.on('news', function (data) {
+      console.log(data);
+      socket.emit('device info', { "foo": "bar", "height": window.innerHeight, "width": window.innerWidth, orientation: window.orientation });
+    });
+
+    socket.on('reload', function (data) {
+      window.location = window.location;
+    });
+  </script>
+  <style>
+    body { margin: 0; padding: 0; height: 100%; }
+  </style>
+</head>
+<body>
+  <img src="/tweetscreen.png" id="screen" width="320" height="480">
+  <script>
+    document.getElementById("screen").addEventListener("click", function (e) {
+      console.log(e);
+      // alert(e.clientX + " - " + e.clientY);
+      socket.emit('down', { x: e.clientX, y: e.clientY });
+      setTimeout(function () { socket.emit('up'); }, 700);
+    }, false);
+  </script>
+</body>
+</html>
