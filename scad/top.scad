@@ -44,7 +44,11 @@ module side_connectors() {
         // Base plate
         //cube([8*9, beam_width * 9, 4]);
         cylinder(r=beam_width*12+1, h=4, $fn=6);
-	
+
+        // Center hole
+        translate([0,0,-2])	
+        cylinder(r=5, h=8, $fn=30);
+
         // Delta-bot leg mounting holes
         //translate([36,36,-5]) 
         translate([0,0,-5])
