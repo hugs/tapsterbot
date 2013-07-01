@@ -50,7 +50,7 @@
 
 ### Servocity
     Qty     Description
-    3       Hitec HS-311 servo
+    3       Hitec HS-311 servo (clockwise rotation)
 
 ### Staples
     Qty     Description
