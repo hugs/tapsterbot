@@ -66,13 +66,13 @@ Plywood and Basswood from Blick Arts / Midwest Products
 
 ### McMaster-Carr
     Screwdrivers:
-    Qty     Description         Note
-    1       3/32 hex driver     For 4-40 screws
-    1       7/64 hex driver     For 6-32 screws
-    1       5/32 hex driver     For 10-32 screws
-    1       3/8 nut driver      For 10-32 screws
-    1       5/16 wrench         For 10-32 nuts
-    1       Philips #1 driver   For servo mount
+    Qty     Description         Long Description:                           Part #:     Price:          Note:
+    1       3/32 hex driver     Comfort Grip Ball Driver                    5497A25     $2.27 Each      For 4-40 screws
+    1       7/64 hex driver     Comfort Grip Ball Driver                    5497A26     $2.31 Each      For 6-32 screws
+    1       5/32 hex driver     Comfort Grip Ball Driver                    5497A29     $2.69 Each      For 10-32 screws
+    1       3/8 nut driver      Comfort-Grip Inch NutdriversFor             53765A16    $3.58 Each      For 10-32 lock nuts
+    1       5/16 wrench         Miniature Inch Combination Wrench           5443A28     $10.69 Each     For 10-32 nuts
+    1       Philips #1 driver   Ultra-Grip Screwdriver with Antislip Tip    55095A32    $3.61 Each      For servo mount
 
 ## Miscellaneous:
 
