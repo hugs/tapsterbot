@@ -22,10 +22,10 @@
 
 ### McMaster-Carr
     Socket Bolts:
-    Qty     Description
+    Qty     Description     Long Description:                                   Part #:
     4       4-40 1/2 in
     6       6-32 3/4 in
-    12      10-32 3/4 in
+    12      10-32 3/4 in    (Black-Oxide Alloy Steel Socket Head Cap Screw)     91251A345
     44      10-32 1 in
     6       10-32 1 1/4 in
 
