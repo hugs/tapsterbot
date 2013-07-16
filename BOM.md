@@ -1,6 +1,6 @@
 ## Tapsterbot Bill of Materials:
 
-### Bitbeam / SecretMathLab
+### Bitbeam
     3D Print:
     Qty     Description
     12      2x1 beam
