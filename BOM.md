@@ -30,12 +30,11 @@
     6       10-32 1 1/4 in  Black-Oxide Alloy Steel Socket Head Cap Screw   91251A349   $10.94 per pack of 50
 
     Hex Nuts:
-    Qty     Description
-    4       4-40 nuts
-    6       6-32 nuts
-    40      10-32 low-profile nuts
-    18      10-32 lock nuts
-    4       10-32 wing nuts
+    Qty     Description             Long Description:                                       Part #:     Price:
+    4       4-40 nuts               Black Nylon 6/6 Hex Nut                                 94900A005   $5.47 per pack of 100
+    6       6-32 nuts               Zinc-Plated Steel Machine Screw Hex Nut                 90480A007   $1.16 per pack of 100
+    44      10-32 low-profile nuts  18-8 Stainless Steel Undersized Machine Screw Hex Nut   90730A411   $6.18 per pack of 100
+    18      10-32 lock nuts         Zinc-Plated Grade 2 Steel Nylon-Insert Hex Locknut      90631A411   $2.81 per pack of 100
 
 
 ### Jameco
