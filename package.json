@@ -23,14 +23,14 @@
    ],
    "repository":{
       "type":"git",
-      "url":"git://github.com/hugs/tapsterbot.git"
+      "url":"https://github.com/hugs/tapsterbot.git"
    },
    "engines":{
       "node":"0.8.x",
       "npm":"1.1.x"
    },
    "dependencies":{
-      "johnny-five":"git://github.com/voodootikigod/johnny-five.git",
+      "johnny-five":"latest",
       "socket.io":"0.9.11",
       "sylvester":"0.0.21"
    },
