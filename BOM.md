@@ -6,9 +6,10 @@
     12      2x1 beam
     8       3x1 beam
     6       5x1 beam
-    8       9x1 beam
+    5       9x1 beam
     2       11x1 plate
-    6       17x1 plate    
+    6       17x1 plate
+    3       Upper arm    
     3       Servo mount
     1       Stylus holder
 
