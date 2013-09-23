@@ -1,4 +1,4 @@
-# Tapsterbot
+# Tapster
 
 ## Your new mobile app testing robot
 
