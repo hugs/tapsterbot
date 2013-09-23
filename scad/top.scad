@@ -1,5 +1,3 @@
-include <vendor/Write.scad>;
-
 beam_width    = 8;
 hole_diameter = 5.1;
 hole_radius   = hole_diameter / 2;
@@ -64,10 +62,10 @@ union(){
         translate([0,-8*6,0])
         box();
     }
-
+   
     rotate([0,0,180])
-    translate([0,-45,4])
-    write("tapster",h=10,t=4,font="vendor/orbitron.dxf",center=true);
+    translate([0,-50,4])
+    linear_extrude(center=true, height=4) import("tapster.dxf");
 }
 //}
 
