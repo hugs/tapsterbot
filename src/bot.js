@@ -12,15 +12,9 @@ var app = require('http').createServer(handler),
   fs = require('fs')
 
   board.on("ready", function() {
-    var servo1 = five.Servo({
-      pin: 9
-    });
-    var servo2 = five.Servo({
-      pin: 10
-    });
-    var servo3 = five.Servo({
-      pin: 11
-    });
+    var servo1 = five.Servo(9);
+    var servo2 = five.Servo(10);
+    var servo3 = five.Servo(11);
 
     board.repl.inject({
       servo1: servo1,

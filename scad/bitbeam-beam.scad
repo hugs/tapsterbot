@@ -13,6 +13,10 @@
 beam_width     = 8;
 hole_diameter  = 5.1;
 
+// Open Structures
+//beam_width     = 10;
+//hole_diameter  = 5.6;
+
 hole_radius    = hole_diameter / 2;
 
 module beam(number_of_holes) {
@@ -24,12 +28,12 @@ module beam(number_of_holes) {
         // Cut the holes...
         for (x=[beam_width/2 : beam_width : beam_length]) {
             translate([x,beam_width/2,-2])
-            cylinder(r=hole_radius, h=12, $fn=30);
+            cylinder(r=hole_radius, h=beam_width*1.5, $fn=30);
         }
         for (x=[beam_width/2 : beam_width : beam_length]) {
             rotate([90,0,0])
-            translate([x,beam_width/2,-10])
-            cylinder(r=hole_radius, h=12, $fn=30);
+            translate([x,beam_width/2,-beam_width*1.5])
+            cylinder(r=hole_radius, h=beam_width*2, $fn=30);
         }
 
         // Optional through-hole
@@ -39,4 +43,4 @@ module beam(number_of_holes) {
         }
 }
 
-beam(3);
+beam(9);
