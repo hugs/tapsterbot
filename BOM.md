@@ -26,8 +26,8 @@
     Qty     Description     Long Description:                               Part #     Unit Price
     4       4-40 1/2 in     Black-Oxide Alloy Steel Socket Head Cap Screw   91251A110   $8.34 per pack of 100
     6       6-32 3/4 in     Black-Oxide Alloy Steel Socket Head Cap Screw   91251A151   $8.50 per pack of 100
-    46      10-32 3/4 in    Black-Oxide Alloy Steel Socket Head Cap Screw   91251A345   $9.93 per pack of 100
-    14      10-32 1 in      Black-Oxide Alloy Steel Socket Head Cap Screw   91251A347   $7.82 per pack of 50
+    50      10-32 3/4 in    Black-Oxide Alloy Steel Socket Head Cap Screw   91251A345   $9.93 per pack of 100
+    10      10-32 1 in      Black-Oxide Alloy Steel Socket Head Cap Screw   91251A347   $7.82 per pack of 50
     6       10-32 1 1/4 in  Black-Oxide Alloy Steel Socket Head Cap Screw   91251A349   $10.94 per pack of 50
 
     Hex Nuts:
