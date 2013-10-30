@@ -1,6 +1,4 @@
-# Tapster
-
-## Mobile automation robotics
+## Tapster - Mobile automation robotics
 
 <span>
     ![Tapsterbot](http://hugs.github.io/img/tapster-ohai-black.jpg)
