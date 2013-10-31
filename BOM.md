@@ -45,7 +45,7 @@
     1       Breadboard              BREADBOARD,35x45x10mm,2.54mm HOLE SPACING   2109801         $4.95
     2       Jumper Wires            WIRE JUMPER REINFORCD,4"L,W/R               126342          $5.95
     1       USB cable               CABLE,USB2.0,A/B,3',BLACK                   222608          $1.95
-    1       Alligator clip          ALLIGATOR CLIP TEST LEADS,10PK              10444           $4.95
+    1       Alligator clip          ALLIGATOR CLIP TEST LEADS, 24 AWG WIRE      2185483         $1.95
     3       3-pin headers           HEADER,.1"ST MALE,1RW,3PIN                  109576          $0.35
 
 ### Servocity
