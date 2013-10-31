@@ -1,4 +1,4 @@
-## Tapsterbot Bill of Materials:
+## Tapster Bill of Materials:
 
 ### Bitbeam
     3D Print:
