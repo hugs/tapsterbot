@@ -30,14 +30,14 @@ var app = require('http').createServer(handler),
     var max = 15;
     var min = 5;
     var range = max - min;
-    servo1.move(min);
-    servo2.move(min);
-    servo3.move(min);
+    servo1.to(min);
+    servo2.to(min);
+    servo3.to(min);
 
     var dance = function() {
-      servo1.move(parseInt((Math.random() * range) + min, 10));
-      servo2.move(parseInt((Math.random() * range) + min, 10));
-      servo3.move(parseInt((Math.random() * range) + min, 10));
+      servo1.to(parseInt((Math.random() * range) + min, 10));
+      servo2.to(parseInt((Math.random() * range) + min, 10));
+      servo3.to(parseInt((Math.random() * range) + min, 10));
     };
 
     var dancer;
@@ -71,9 +71,9 @@ var app = require('http').createServer(handler),
 
 go = function(x, y, z) {
   angles = ik.inverse(x, y, z);
-  s1.move(angles[1]);
-  s2.move(angles[2]);
-  s3.move(angles[3]);
+  s1.to(angles[1]);
+  s2.to(angles[2]);
+  s3.to(angles[3]);
   console.log(angles);
 }
 
