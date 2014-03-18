@@ -1,4 +1,4 @@
-## Tapsterbot Bill of Materials:
+## Tapster Bill of Materials:
 
 ### Bitbeam
     3D Print:
@@ -26,8 +26,8 @@
     Qty     Description     Long Description:                               Part #     Unit Price
     4       4-40 1/2 in     Black-Oxide Alloy Steel Socket Head Cap Screw   91251A110   $8.34 per pack of 100
     6       6-32 3/4 in     Black-Oxide Alloy Steel Socket Head Cap Screw   91251A151   $8.50 per pack of 100
-    46      10-32 3/4 in    Black-Oxide Alloy Steel Socket Head Cap Screw   91251A345   $9.93 per pack of 100
-    14      10-32 1 in      Black-Oxide Alloy Steel Socket Head Cap Screw   91251A347   $7.82 per pack of 50
+    50      10-32 3/4 in    Black-Oxide Alloy Steel Socket Head Cap Screw   91251A345   $9.93 per pack of 100
+    10      10-32 1 in      Black-Oxide Alloy Steel Socket Head Cap Screw   91251A347   $7.82 per pack of 50
     6       10-32 1 1/4 in  Black-Oxide Alloy Steel Socket Head Cap Screw   91251A349   $10.94 per pack of 50
 
     Hex Nuts:
@@ -45,7 +45,7 @@
     1       Breadboard              BREADBOARD,35x45x10mm,2.54mm HOLE SPACING   2109801         $4.95
     2       Jumper Wires            WIRE JUMPER REINFORCD,4"L,W/R               126342          $5.95
     1       USB cable               CABLE,USB2.0,A/B,3',BLACK                   222608          $1.95
-    1       Alligator clip          ALLIGATOR CLIP TEST LEADS,10PK              10444           $4.95
+    1       Alligator clip          ALLIGATOR CLIP TEST LEADS, 24 AWG WIRE      2185483         $1.95
     3       3-pin headers           HEADER,.1"ST MALE,1RW,3PIN                  109576          $0.35
 
 ### Servocity

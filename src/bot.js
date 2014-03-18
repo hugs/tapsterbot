@@ -22,11 +22,13 @@ var app = require('http').createServer(handler),
       servo2: servo2,
       s2: servo2,
       servo3: servo3,
-      s3: servo3
+      s3: servo3,
+      play: play,
+      play_forever: play_forever
     });
 
-    var max = 42;
-    var min = 20;
+    var max = 15;
+    var min = 5;
     var range = max - min;
     servo1.move(min);
     servo2.move(min);
@@ -41,7 +43,7 @@ var app = require('http').createServer(handler),
     var dancer;
 
     start_dance = function() {
-      if (!dancer) dancer = setInterval(dance, 500);
+      if (!dancer) dancer = setInterval(dance, 250);
     }
 
     stop_dance = function() {
@@ -75,6 +77,38 @@ go = function(x, y, z) {
   console.log(angles);
 }
 
+move = function(x,y,z, when) {
+  setTimeout(function(){ go(x,y,z);}, when);
+}
+
+play = function(){
+    move(20,-9,-130,0);
+    move(20,-9,-146,1000);
+    move(40,-20,-143,2000);
+    move(40,-20,-140,2500);
+    move(0,0,-120,3000);
+
+    move(8,-22,-140,19000);
+    move(8,-22,-146,20000);
+    move(8,-22,-140,21000);
+    move(0,0,-120,22000);
+}
+
+
+repeat = function(){
+   move(8,-22,-140,0);
+   move(8,-22,-146,500);
+   move(8,-22,-140,1000);
+}
+
+
+play_forever = function(){
+    console.log("Now playing forever...")
+    play();
+    interval = setInterval(play,28000);
+    return interval;
+}
+
 position = function() {
   return ik.forward(servo1.last.degrees, servo2.last.degrees, servo3.last.degrees);
 }
@@ -94,8 +128,8 @@ function handler(req, res) {
   if (req.url == "/control") {
     file = "/control.html";
   }
-  if (req.url == "/tweetscreen.png") {
-    file = "/tweetscreen.png";
+  if (req.url == "/screen.png") {
+    file = "/screen.png";
     type = "image/png";
   }
 
@@ -252,3 +286,5 @@ moveDownUntilTap = function(err, callback) {
     }
   }, 500);
 }
+
+
