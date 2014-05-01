@@ -3,12 +3,11 @@
 
 (function(exports) {
 
-  // Specific geometry for bitbeambot:
-  // http://flic.kr/p/cYaQah
-  var e = 83.138;
-  var f = 103.9;
-  var re = 8 * 18;
-  var rf = 8 * 7;
+  // Specific geometry for Tapster:
+  var e = 34.64101615137754;  // Math.sqrt(3) * 10 * 2
+  var f = 110.85125168440814; // Math.sqrt(3) * 32 * 2
+  var re = 153.5;             // 145 + 8.5
+  var rf = 52.690131903421914; // Math.sqrt(52**2 + 8.5**2)
 
   exports.updateSize = function(parameters) {
     e = parameters[0];

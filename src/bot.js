@@ -12,9 +12,18 @@ var app = require('http').createServer(handler),
   fs = require('fs')
 
   board.on("ready", function() {
-    var servo1 = five.Servo(9);
-    var servo2 = five.Servo(10);
-    var servo3 = five.Servo(11);
+    var servo1 = five.Servo({
+        pin: 9,
+        range: [0,90]
+    });
+    var servo2 = five.Servo({
+        pin: 10,
+        range: [0,90]
+    });
+    var servo3 = five.Servo({
+        pin: 11,
+        range: [0, 90]
+    });
 
     board.repl.inject({
       servo1: servo1,
@@ -30,14 +39,14 @@ var app = require('http').createServer(handler),
     var max = 15;
     var min = 5;
     var range = max - min;
-    servo1.to(min);
-    servo2.to(min);
-    servo3.to(min);
+    servo1.move(min);
+    servo2.move(min);
+    servo3.move(min);
 
     var dance = function() {
-      servo1.to(parseInt((Math.random() * range) + min, 10));
-      servo2.to(parseInt((Math.random() * range) + min, 10));
-      servo3.to(parseInt((Math.random() * range) + min, 10));
+      servo1.move(parseInt((Math.random() * range) + min, 10));
+      servo2.move(parseInt((Math.random() * range) + min, 10));
+      servo3.move(parseInt((Math.random() * range) + min, 10));
     };
 
     var dancer;
@@ -69,11 +78,16 @@ var app = require('http').createServer(handler),
     })
   });
 
+Number.prototype.map = function ( in_min , in_max , out_min , out_max ) {
+  return ( this - in_min ) * ( out_max - out_min ) / ( in_max - in_min ) + out_min;
+}
+
+// TODO: pull out map values to config file or some other solution.
 go = function(x, y, z) {
   angles = ik.inverse(x, y, z);
-  s1.to(angles[1]);
-  s2.to(angles[2]);
-  s3.to(angles[3]);
+  s1.move((angles[1]).map( 0 , 90 , 8 , 90 ));
+  s2.move((angles[2]).map( 0 , 90 , 6 , 86 ));
+  s3.move((angles[3]).map( 0 , 90 , 3 , 84 ));
   console.log(angles);
 }
 
