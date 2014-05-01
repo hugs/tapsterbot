@@ -82,9 +82,38 @@ Number.prototype.map = function ( in_min , in_max , out_min , out_max ) {
   return ( this - in_min ) * ( out_max - out_min ) / ( in_max - in_min ) + out_min;
 }
 
+rotate = function(x,y) {
+    var theta = -60;
+    x1 = x * cos(theta) - y * sin(theta);
+    y1 = y * cos(theta) + x * sin(theta);
+    return [x1,y1]
+}
+
+
+reflect = function(x,y) {
+    var theta = 0;
+    x1 = x;
+    y1 = x * sin(2*theta) - y * cos(2*theta);
+    return [x1,y1]
+}
+
+
+sin = function(degree) {
+    return Math.sin(Math.PI * (degree/180));
+}
+
+
+cos = function(degree) {
+    return Math.cos(Math.PI * (degree/180));
+}
+
+
 // TODO: pull out map values to config file or some other solution.
 go = function(x, y, z) {
-  angles = ik.inverse(x, y, z);
+  reflected = reflect(x,y);
+  rotated = rotate(reflected[0],reflected[1]);
+  
+  angles = ik.inverse(rotated[0], rotated[1], z);
   s1.move((angles[1]).map( 0 , 90 , 8 , 90 ));
   s2.move((angles[2]).map( 0 , 90 , 6 , 86 ));
   s3.move((angles[3]).map( 0 , 90 , 3 , 84 ));
