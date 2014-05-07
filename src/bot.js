@@ -125,30 +125,35 @@ move = function(x,y,z, when) {
 }
 
 play = function(){
-    move(20,-9,-130,0);
-    move(20,-9,-146,1000);
-    move(40,-20,-143,2000);
-    move(40,-20,-140,2500);
-    move(0,0,-120,3000);
+    move(-10,-20,-140,0);
+    move(-10,-20,-149,200);
+    move(-25,-28,-148,500);
+    move(-25,-28,-140,800);
+    move(0,0,-120,1200);
 
-    move(8,-22,-140,19000);
-    move(8,-22,-146,20000);
-    move(8,-22,-140,21000);
-    move(0,0,-120,22000);
+    move(34,-36,-140, 4000);
+    move(34,-36,-150, 4500);
+    move(34,-36,-140, 5000);    
+
+    move(4,-32,-140,0+8000);
+    move(4,-32,-149,300+8000);
+    move(4,-32,-140,600+8000);
+    move(0,0,-120,900+8000);
 }
 
 
 repeat = function(){
-   move(8,-22,-140,0);
-   move(8,-22,-146,500);
-   move(8,-22,-140,1000);
+   move(4,-32,-140,0);
+   move(4,-32,-149,300);
+   move(4,-32,-140,600);
+   move(0,0,-120,900);
 }
 
 
 play_forever = function(){
     console.log("Now playing forever...")
     play();
-    interval = setInterval(play,28000);
+    interval = setInterval(play,13000);
     return interval;
 }
 
