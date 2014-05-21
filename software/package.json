@@ -1,0 +1,23 @@
+{
+   "name":"tapster",
+   "description":"Mobile automation robot",
+   "version":"2.0.0",
+   "homepage":"",
+   "author":[
+      {
+         "name":"Jason Huggins",
+         "email":"jrhuggins@gmail.com"
+      }
+   ],
+   "repository":{
+      "type":"git",
+      "url":"https://github.com/hugs/tapsterbot.git"
+   },
+   "engines":{
+      "node":"0.8.x",
+      "npm":"1.1.x"
+   },
+   "dependencies":{
+      "johnny-five":"0.5.14",
+   }
+}

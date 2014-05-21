@@ -1,0 +1,42 @@
+throw_bird = function() {
+
+    go(7,33,-145);
+
+    setTimeout((function() {
+        go(7,33,-140);
+    }), 500);
+
+    setTimeout((function() {
+        go(14,50,-148);
+        //go(18,53,-158)
+    }), 1000);
+
+    setTimeout((function() {
+        //go(18,53,-151)
+        go(14,50,-148);
+    }), 1500);
+
+    setTimeout((function() {
+        go(0,0,-130);
+    }), 2000);
+}
+throw_bird()
+
+repeat = function() {
+    setTimeout((function() {
+        go(22,12,-155);
+    }), 0);
+    
+     setTimeout((function() {
+        go(22,12,-161);
+    }), 500);   
+    
+    setTimeout((function() {
+        go(22,12,-155);
+    }), 1000);    
+
+    setTimeout((function() {
+        go(0,0,-130);
+    }), 1500);
+}
+
