@@ -55,8 +55,8 @@
 ## Electronics:
 
 ### Adafruit.com
-    Qty     Description                     Long Description                Part #          Unit Price
-    1       9V Arduino Power adaptor
+    Qty     Description     Long Description                                 Part #          Unit Price
+    1       Power adaptor   9 VDC 1000mA regulated switching power adapter   63              $6.95
     
 ### Amazon.com
     Qty     Description                     Long Description                    Part #          Unit Price
