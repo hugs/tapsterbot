@@ -55,12 +55,12 @@
 ## Electronics:
 
 ### Adafruit.com
-    Qty     Description     Long Description                                 Part #          Unit Price
-    1       Power adaptor   9 VDC 1000mA regulated switching power adapter   63              $6.95
+    Qty     Description     Long Description                                    Part #          Unit Price
+    1       Power adaptor   9 VDC 1000mA regulated switching power adapter      63              $6.95
     
 ### Amazon.com
-    Qty     Description                     Long Description                    Part #          Unit Price
-    1       Sainsmart arduino sensor shield
+    Qty     Description                                                         Part #          Unit Price
+    1       SainSmart Sensor Shield Digital Analog Module V4                    B006TQ314G      $12.80
 
 ### Jameco.com
     Qty     Description             Long Description                            Part #          Unit Price
