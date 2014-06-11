@@ -39,8 +39,8 @@
 
     Misc:
     Qty     Description                                 Long Description:                   Part #      Unit Price
-    12      3/8" Steel ball bearing           
-    6       12cm 6-32 Zinc-plated steel threaded rod
+    12      3/8" Steel ball bearing                                                         96455K54    $5.87 per pack of 250
+    6       12cm 6-32 Zinc-plated steel threaded rod    (Sold in 6ft sections)              98914A007   $3.67 for 6ft
 
 
 ### Servocity
