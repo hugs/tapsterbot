@@ -21,7 +21,7 @@
 
 ### Indigo.com
     Qty     Description                                             Part #          Unit Price
-    24      5mm x 7mm Neodymium magnet     
+    24      Rod magnet, D5 x 7.5mm, Nd rare earth, N42              44201-7.5       $0.44
 
 ### McMaster-Carr
     Socket Bolts:
