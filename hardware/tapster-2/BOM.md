@@ -21,7 +21,7 @@
 
 ### Indigo.com
     Qty     Description                                             Part #          Unit Price
-    24      5mm x 7mm Neodymium magnet     
+    24      Rod magnet, D5 x 7.5mm, Nd rare earth, N42              44201-7.5       $0.44
 
 ### McMaster-Carr
     Socket Bolts:
@@ -39,8 +39,8 @@
 
     Misc:
     Qty     Description                                 Long Description:                   Part #      Unit Price
-    12      3/8" Steel ball bearing           
-    6       12cm 6-32 Zinc-plated steel threaded rod
+    12      3/8" Steel ball bearing                                                         96455K54    $5.87 per pack of 250
+    6       12cm 6-32 Zinc-plated steel threaded rod    (Sold in 6ft sections)              98914A007   $3.67 for 6ft
 
 
 ### Servocity
@@ -55,12 +55,12 @@
 ## Electronics:
 
 ### Adafruit.com
-    Qty     Description                     Long Description                Part #          Unit Price
-    1       9V Arduino Power adaptor
+    Qty     Description     Long Description                                    Part #          Unit Price
+    1       Power adaptor   9 VDC 1000mA regulated switching power adapter      63              $6.95
     
 ### Amazon.com
-    Qty     Description                     Long Description                    Part #          Unit Price
-    1       Sainsmart arduino sensor shield
+    Qty     Description                                                         Part #          Unit Price
+    1       SainSmart Sensor Shield Digital Analog Module V4                    B006TQ314G      $12.80
 
 ### Jameco.com
     Qty     Description             Long Description                            Part #          Unit Price
