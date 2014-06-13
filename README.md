@@ -1,7 +1,7 @@
 ## Tapster - Mobile Automation Robot
 
 <span>
-    ![Tapsterbot](http://hugs.github.io/img/tapster-ohai-black.jpg)
+    ![Tapsterbot](http://hugs.github.io/img/tapster-2-desk.jpg)
 </span>
 
 ##Dependencies
