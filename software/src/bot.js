@@ -6,15 +6,15 @@ board = new five.Board({
 
 board.on("ready", function() {
     // Setup
-    var servo1 = five.Servo({
+    servo1 = five.Servo({
         pin: 9,
         range: [0,90]
     });
-    var servo2 = five.Servo({
+    servo2 = five.Servo({
         pin: 10,
         range: [0,90]
     });
-    var servo3 = five.Servo({
+    servo3 = five.Servo({
         pin: 11,
         range: [0, 90]
     });
@@ -42,14 +42,14 @@ board.on("ready", function() {
     var max = 15;
     var min = 5;
     var range = max - min;
-    servo1.move(min);
-    servo2.move(min);
-    servo3.move(min);
+    servo1.to(min);
+    servo2.to(min);
+    servo3.to(min);
 
     var dance = function() {
-      servo1.move(parseInt((Math.random() * range) + min, 10));
-      servo2.move(parseInt((Math.random() * range) + min, 10));
-      servo3.move(parseInt((Math.random() * range) + min, 10));
+      servo1.to(parseInt((Math.random() * range) + min, 10));
+      servo2.to(parseInt((Math.random() * range) + min, 10));
+      servo3.to(parseInt((Math.random() * range) + min, 10));
     };
 
     var dancer;
@@ -110,12 +110,13 @@ go = function(x, y, z) {
   rotated = rotate(reflected[0],reflected[1]);
   
   angles = ik.inverse(rotated[0], rotated[1], z);
-  s1.move((angles[1]).map( 0 , 90 , 8 , 90 ));
-  s2.move((angles[2]).map( 0 , 90 , 8 , 90 ));
-  s3.move((angles[3]).map( 0 , 90 , 8 , 90 ));
+  servo1.to((angles[1]).map( 0 , 90 , 8 , 90 ));
+  servo2.to((angles[2]).map( 0 , 90 , 8 , 90 ));
+  servo3.to((angles[3]).map( 0 , 90 , 8 , 90 ));
   console.log(angles);
 }
 
 position = function() {
   return ik.forward(servo1.last.degrees, servo2.last.degrees, servo3.last.degrees);
 }
+
