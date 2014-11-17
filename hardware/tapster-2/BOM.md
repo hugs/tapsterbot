@@ -33,7 +33,7 @@
 
     Hex Nuts:
     Qty     Description             Long Description:                                       Part #      Unit Price
-    5       4-40 nuts               Black Nylon 6/6 Hex Nut                                 94900A005   $5.47 per pack of 100
+    5       4-40 nuts               Black Nylon 6/6 Hex Nut                                 94812A200   $5.63 per pack of 100
     6       6-32 nuts               Zinc-Plated Steel Machine Screw Hex Nut                 90480A007   $1.16 per pack of 100
     30      10-32 low-profile nuts  18-8 Stainless Steel Undersized Machine Screw Hex Nut   90730A411   $6.18 per pack of 100
 
