@@ -1,13 +1,13 @@
-// Description: Base plate for Tapster 2 Plus
+// Description: Base plate for Tapster 2 Tablet
 // Project home: http://tapsterbot.com
 
 beam_width    = 8;
 hole_diameter = 5.3;
 hole_radius   = hole_diameter / 2;
 
-plate_radius = beam_width * 24;
+plate_radius = beam_width * 26;
 distance_of_edge_from_center = sqrt(pow(plate_radius,2)-pow(plate_radius/2,2));
-joint_hole_center = distance_of_edge_from_center-4;
+joint_hole_center = distance_of_edge_from_center-15;
 
 echo("distance_of_edge_from_center=", distance_of_edge_from_center);
 
@@ -20,13 +20,10 @@ module beam(number_of_holes) {
 }
 
 module joint(){
-    translate([-20.5-4,-distance_of_edge_from_center-1,-4])
-    cube([5,beam_width+1.1,16]);
+    translate([-16,-joint_hole_center,-10])
+    cylinder(r=hole_radius, h=25, $fn=30);
 
-    translate([15.5+4,-distance_of_edge_from_center-1,-4])
-    cube([5,beam_width+1.1,16]);
-
-    translate([0,-joint_hole_center,-10])
+    translate([16,-joint_hole_center,-10])
     cylinder(r=hole_radius, h=25, $fn=30);
 }
 
