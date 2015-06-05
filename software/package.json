@@ -17,6 +17,6 @@
       "node":"0.x.x"
    },
    "dependencies":{
-      "johnny-five":"0.7.x"
+      "johnny-five":"0.8.x"
    }
 }
