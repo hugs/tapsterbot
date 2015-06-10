@@ -19,16 +19,6 @@ board.on("ready", function() {
         range: [0, 90]
     });
 
-    servo1.on("error", function() {
-      console.log(arguments);
-    })
-    servo2.on("error", function() {
-      console.log(arguments);
-    })
-    servo3.on("error", function() {
-      console.log(arguments);
-    })
-
     board.repl.inject({
       servo1: servo1,
       s1: servo1,
@@ -108,7 +98,7 @@ cos = function(degree) {
 go = function(x, y, z) {
   reflected = reflect(x,y);
   rotated = rotate(reflected[0],reflected[1]);
-  
+
   angles = ik.inverse(rotated[0], rotated[1], z);
   servo1.to((angles[1]).map( 0 , 90 , 8 , 90 ));
   servo2.to((angles[2]).map( 0 , 90 , 8 , 90 ));
