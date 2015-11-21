@@ -14,9 +14,9 @@
       "url":"https://github.com/hugs/tapsterbot.git"
    },
    "engines":{
-      "node":"0.x.x"
+      "node":"*"
    },
    "dependencies":{
-      "johnny-five":"0.8.x"
+      "johnny-five":"*"
    }
 }
